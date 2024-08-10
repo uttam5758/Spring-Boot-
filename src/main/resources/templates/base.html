@@ -3,7 +3,7 @@
 	th:fragment="layout(content)">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>E-COMMERCE SPRINGBOOT</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -19,7 +19,7 @@
 </head>
 <body>
 	<!-- Start Navbar  -->
-	<nav class="navbar navbar-expand-lg  bg-primary fixed-top navbar-dark">
+	<nav class="navbar navbar-expand-lg  bg-primary fixed-top navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><i
 				class="fa-solid fa-cart-shopping"></i> Ecom Store</a>
@@ -115,10 +115,60 @@
 	<div th:replace="${content}"></div>
 
 	<!-- Start Footer -->
-	<div class="container-fluid p-1 bg-primary text-center text-white"
-		style="margin-top: 250px">
-		<p>ecom.com</p>
-	</div>
+<!--	<div class="container-fluid p-1 bg-primary text-center text-white"-->
+<!--		style="margin-top: 250px">-->
+<!--		<p>ecom.com</p>-->
+<!--	</div>-->
+	<!-- Site footer -->
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<h6>About</h6>
+					<p class="text-justify">Hamro Mart <i></i> Welcome to Hamro Mart, your one-stop destination for all your shopping needs! We are dedicated to bringing you a seamless and enjoyable shopping experience, offering a wide range of high-quality products at competitive prices.</p>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<h6>Categories</h6>
+					<ul class="footer-links">
+						<li><a href="">ELECTRONICS</a></li>
+						<li><a href="">GROCERY</a></li>
+						<li><a href="">CLOTHES</a></li>
+						<li><a href="">DAIRY</a></li>
+
+					</ul>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<h6>Quick Links</h6>
+					<ul class="footer-links">
+						<li><a href="/register">SIGN UP</a></li>
+						<li><a href="/signin">LOG IN</a></li>
+						<li><a href="/forgot-password">FORGOT PASSWORD</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<hr>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-6 col-xs-12">
+
+					</p>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<ul class="social-icons">
+						<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+						<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<!-- End Footer  -->
 
 	<!-- Jquery Validation Library  -->
